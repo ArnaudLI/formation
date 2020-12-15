@@ -1,0 +1,16 @@
+<!--<p>machine works!</p>
+<div *ngFor="let machine of listeMachine">
+    {{machine.name}}  {{machine.type}}  isRunning ? {{machine.isRunning}}
+</div>
+
+<button (click)="allOn()">Switch On All Devices</button>
+<button (click)="allOff()">Switch Off All Devices</button>-->
+
+<!--<p> {{name}} -- {{type}} -- isRunning ? {{isRunning}}  <button (click)="switchOne()">click me</button></p>-->
+
+<p>Je suis dans Machine Component</p>
+
+<div *ngFor="let machine of listeMachine">
+    <p>{{machine.name}} -- {{machine.id}}</p>
+    <a [routerLink]=[machine.id]>Detail</a>
+</div> 

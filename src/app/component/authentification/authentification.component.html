@@ -1,0 +1,4 @@
+<p>authentification works!</p>
+
+<button *ngIf="!userStatus" (click)="signIn()">Connexion</button>
+<button *ngIf="userStatus" (click)="signOut()">Deconnexion</button>
